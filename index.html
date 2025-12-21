@@ -1,0 +1,73 @@
+<!-- this is the file for main page ie. for the the dashboard page  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Visualizer - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="dashboard-header">
+            <h1 class="main-title">DSA Visualizer</h1>
+            <p class="subtitle">Interactive Algorithm Animation Tool</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="module-card" onclick="window.location.href='linkedlist.html'">
+                <div class="card-icon">🔗</div>
+                <h3>Linked List</h3>
+                <p>Insert, Delete, Search, Reverse</p>
+            </div>
+
+            <div class="module-card" onclick="window.location.href='stack.html'">
+                <div class="card-icon">📚</div>
+                <h3>Stack</h3>
+                <p>Push, Pop, Peek Operations</p>
+            </div>
+
+            <div class="module-card" onclick="window.location.href='queue.html'">
+                <div class="card-icon">📥</div>
+                <h3>Queue</h3>
+                <p>Enqueue, Dequeue Operations</p>
+            </div>
+
+            <div class="module-card" onclick="window.location.href='tree.html'">
+                <div class="card-icon">🌳</div>
+                <h3>Binary Tree</h3>
+                <p>Level-wise Construction & Traversals</p>
+            </div>
+
+            <div class="module-card" onclick="window.location.href='array.html'">
+                <div class="card-icon">🔢</div>
+                <h3>Array Algorithms</h3>
+                <p>Linear & Binary Search</p>
+            </div>
+
+            <div class="module-card" onclick="window.location.href='sorting.html'">
+                <div class="card-icon">📊</div>
+                <h3>Sorting</h3>
+                <p>Bubble, Selection, Insertion, Merge</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Built with ❤️ for learning Data Structures & Algorithms by Yuvraj</p>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Alerts -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <p id="modalMessage"></p>
+            </div>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+</body>
+</html>
