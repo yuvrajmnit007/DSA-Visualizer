@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <a href="index.html" class="back-button">← Back to Dashboard</a>
+        
+        <h1 class="page-title">Sorting Algorithm Visualizer</h1>
+
+        <div class="control-panel">
+            <div class="input-group">
+                <input type="text" id="inputValue" class="input-field" placeholder="Enter array: 64,34,25,12,22,11,90">
+                <select id="algorithmSelect" class="input-field">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="merge">Merge Sort</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="createArray()">Create Array</button>
+                <button class="btn btn-success" onclick="startSort()" id="sortButton">Start Sort</button>
+            </div>
+        </div>
+
+        <div class="visual-area" id="visualArea" style="align-items: flex-end; min-height: 500px;">
+            <p class="empty-state">Create an array to get started</p>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Alerts -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <p id="modalMessage"></p>
+            </div>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="sorting.js"></script>
+</body>
+</html>

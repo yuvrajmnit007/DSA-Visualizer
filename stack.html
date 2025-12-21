@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <a href="index.html" class="back-button">← Back to Dashboard</a>
+        
+        <h1 class="page-title">Stack Visualizer</h1>
+
+        <div class="control-panel">
+            <div class="input-group">
+                <input type="text" id="inputValue" class="input-field" placeholder="Enter value">
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-success" onclick="push()">Push</button>
+                <button class="btn btn-danger" onclick="pop()">Pop</button>
+                <button class="btn btn-info" onclick="peek()">Peek</button>
+                <button class="btn btn-warning" onclick="clearStack()">Clear Stack</button>
+            </div>
+        </div>
+
+        <div class="visual-area" id="visualArea">
+            <div style="text-align: center;">
+                <div class="top-pointer">TOP ↓</div>
+                <div class="stack-container" id="stackContainer">
+                </div>
+                <p class="empty-state" id="emptyMessage">Stack is empty</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Alerts -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <p id="modalMessage"></p>
+            </div>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="stack.js"></script>
+</body>
+</html>

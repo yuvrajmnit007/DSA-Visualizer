@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <a href="index.html" class="back-button">← Back to Dashboard</a>
+        
+        <h1 class="page-title">Array Algorithm Visualizer</h1>
+
+        <div class="control-panel">
+            <div class="input-group">
+                <input type="text" id="inputValue" class="input-field" placeholder="Enter array: 3,7,9,12,15,18">
+                <input type="text" id="searchValue" class="input-field" placeholder="Search value">
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="createArray()">Create Array</button>
+                <button class="btn btn-success" onclick="linearSearch()">Linear Search</button>
+                <button class="btn btn-info" onclick="binarySearch()">Binary Search (Sorted Only)</button>
+            </div>
+        </div>
+
+        <div class="visual-area" id="visualArea">
+            <p class="empty-state">Create an array to get started</p>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Alerts -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <p id="modalMessage"></p>
+            </div>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="array.js"></script>
+</body>
+</html>

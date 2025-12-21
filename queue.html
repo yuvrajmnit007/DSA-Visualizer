@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <a href="index.html" class="back-button">← Back to Dashboard</a>
+        
+        <h1 class="page-title">Queue Visualizer</h1>
+
+        <div class="control-panel">
+            <div class="input-group">
+                <input type="text" id="inputValue" class="input-field" placeholder="Enter value">
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-success" onclick="enqueue()">Enqueue</button>
+                <button class="btn btn-danger" onclick="dequeue()">Dequeue</button>
+                <button class="btn btn-info" onclick="front()">Front</button>
+                <button class="btn btn-purple" onclick="rear()">Rear</button>
+                <button class="btn btn-warning" onclick="clearQueue()">Clear Queue</button>
+            </div>
+        </div>
+
+        <div class="visual-area" id="visualArea">
+            <div style="text-align: center;">
+                <div style="display: flex; gap: 2rem; margin-bottom: 1rem; justify-content: center;">
+                    <div class="front-pointer">← FRONT</div>
+                    <div class="rear-pointer">REAR →</div>
+                </div>
+                <div class="queue-container" id="queueContainer">
+                </div>
+                <p class="empty-state" id="emptyMessage">Queue is empty</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Alerts -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <p id="modalMessage"></p>
+            </div>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="queue.js"></script>
+</body>
+</html>

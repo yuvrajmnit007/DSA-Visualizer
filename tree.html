@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Tree Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <a href="index.html" class="back-button">← Back to Dashboard</a>
+        
+        <h1 class="page-title">Binary Tree Visualizer</h1>
+
+        <div class="control-panel">
+            <div class="input-group">
+                <input type="text" id="inputValue" class="input-field" placeholder="Enter values: 1,2,3,4,5,null,6 (use null for empty nodes)">
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="createTree()">Create Tree</button>
+                <button class="btn btn-success" onclick="inorderTraversal()">Inorder Traversal</button>
+                <button class="btn btn-info" onclick="preorderTraversal()">Preorder Traversal</button>
+                <button class="btn btn-purple" onclick="postorderTraversal()">Postorder Traversal</button>
+                <button class="btn btn-info" onclick="levelorderTraversal()">Level Order Traversal</button>
+                <button class="btn btn-warning" onclick="clearTree()">Clear Tree</button>
+            </div>
+        </div>
+        
+        <div id="traversalResult" style="text-align: center; margin-bottom: 1rem;">
+            <div style="color: #22d3ee; font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;" id="traversalTitle"></div>
+            <div style="color: #10b981; font-size: 1.5rem; font-weight: bold;" id="traversalValues"></div>
+        </div>
+
+        <div class="visual-area" id="visualArea" style="overflow: auto;">
+            <p class="empty-state">Enter values to create a binary tree</p>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Alerts -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <p id="modalMessage"></p>
+            </div>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="tree.js"></script>
+</body>
+</html>
