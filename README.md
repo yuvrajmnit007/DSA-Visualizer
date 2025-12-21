@@ -48,3 +48,44 @@ step-by-step animations.
 - JavaScript (Vanilla)
 
 ---
+
+## 📂 Project Structure
+dsa visualizer/
+├── index.html
+├── linkedlist.html
+├── stack.html
+├── queue.html
+├── tree.html
+├── array.html
+├── sorting.html
+├── common.js
+├── linkedlist.js
+├── stack.js
+├── queue.js
+├── tree.js
+├── array.js
+├── sorting.js
+├── style.css
+
+## 🌐 Live Demo
+https://<your-github-username>.github.io/dsa-visualizer/
+
+
+---
+
+## 🎯 Learning Outcomes
+- Strong understanding of pointer-based data structures
+- Visual debugging of algorithms
+- Improved algorithmic intuition
+- Clean separation of logic and UI
+
+---
+
+## 👤 Author
+**Yuvraj Choudhary**  
+- LinkedIn: https://www.linkedin.com/in/yuvrajchoudhary007/
+
+---
+
+## ⭐ If you like this project
+Give it a ⭐ on GitHub!
