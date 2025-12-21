@@ -52,7 +52,7 @@ step-by-step animations.
 ## 📂 Project Structure
 
 ## 🌐 Live Demo
-https://yuvrajmnit007.github.io/dsa-visualizer/
+https://yuvrajmnit007.github.io/DSA-Visualizer/
 
 
 ---
