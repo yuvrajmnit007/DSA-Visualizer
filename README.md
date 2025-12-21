@@ -50,25 +50,9 @@ step-by-step animations.
 ---
 
 ## 📂 Project Structure
-dsa visualizer/
-├── index.html
-├── linkedlist.html
-├── stack.html
-├── queue.html
-├── tree.html
-├── array.html
-├── sorting.html
-├── common.js
-├── linkedlist.js
-├── stack.js
-├── queue.js
-├── tree.js
-├── array.js
-├── sorting.js
-├── style.css
 
 ## 🌐 Live Demo
-https://<your-github-username>.github.io/dsa-visualizer/
+https://yuvrajmnit007.github.io/dsa-visualizer/
 
 
 ---
