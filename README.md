@@ -236,7 +236,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🌐 GitHub: [@yuvrajmnit007](https://github.com/yuvrajmnit007)
 - 💼 LinkedIn: [Yuvraj Choudhary](https://www.linkedin.com/in/yuvrajchoudhary007/)
-- 📧 Email: yuvraj.choudhary@example.com *(Update with your actual email)*
+- 📧 Email: yuvrajchoudhary3768@gmail.com
 
 ---
 
