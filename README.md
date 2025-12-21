@@ -50,6 +50,7 @@ step-by-step animations.
 ---
 
 ## 📂 Project Structure
+dsa visualizer/
 ├── index.html
 ├── linkedlist.html
 ├── stack.html
